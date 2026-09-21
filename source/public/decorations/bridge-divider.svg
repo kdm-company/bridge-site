@@ -1,0 +1,53 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1440 180"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path
+    d="M 0 64
+       C 230 64, 410 66, 560 74
+       C 635 78, 690 82, 760 82
+       C 850 82, 925 76, 1040 68
+       C 1180 58, 1320 54, 1440 54"
+    fill="none"
+    stroke="#DCE2E6"
+    stroke-width="1.2"
+    stroke-linecap="round"
+    vector-effect="non-scaling-stroke"
+  />
+
+  <path
+    d="M 0 90
+       C 245 90, 430 88, 570 85
+       C 645 83, 700 82, 760 82
+       C 840 82, 920 86, 1035 92
+       C 1170 99, 1305 104, 1440 106"
+    fill="none"
+    stroke="#164EE8"
+    stroke-opacity="0.25"
+    stroke-width="1.4"
+    stroke-linecap="round"
+    vector-effect="non-scaling-stroke"
+  />
+
+  <path
+    d="M 0 116
+       C 225 116, 405 112, 550 100
+       C 630 93, 690 86, 760 82
+       C 850 78, 930 84, 1050 96
+       C 1185 110, 1315 120, 1440 124"
+    fill="none"
+    stroke="#DCE2E6"
+    stroke-width="1.1"
+    stroke-linecap="round"
+    vector-effect="non-scaling-stroke"
+  />
+
+  <circle
+    cx="760"
+    cy="82"
+    r="4"
+    fill="#164EE8"
+  />
+</svg>

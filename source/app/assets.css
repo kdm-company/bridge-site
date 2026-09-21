@@ -1,0 +1,98 @@
+.hero-visual {
+  isolation: isolate;
+}
+.hero-connections {
+  position: absolute;
+  z-index: -1;
+  left: -16%;
+  top: -8%;
+  width: 116%;
+  height: 112%;
+  pointer-events: none;
+  object-fit: fill;
+}
+.hero-photo-frame {
+  position: relative;
+  height: calc(100% - 2rem);
+  min-height: 410px;
+  overflow: hidden;
+  background: #e8edf2;
+}
+.hero-photo {
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 58%;
+}
+.company-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #e8edf2;
+}
+.company-photo-caption {
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+}
+.section-divider {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 1.5rem;
+}
+.section-divider img {
+  display: block;
+  width: 100%;
+  height: clamp(60px, 10vw, 140px);
+  object-fit: fill;
+}
+.section-divider + .home-strengths {
+  padding-top: clamp(2rem, 4vw, 4rem);
+}
+.values {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+.values > .container {
+  position: relative;
+  z-index: 1;
+}
+.values-orbits {
+  position: absolute;
+  z-index: 0;
+  width: min(900px, 85vw);
+  height: auto;
+  right: -6%;
+  top: -5rem;
+  pointer-events: none;
+  opacity: 0.8;
+}
+@media (max-width: 640px) {
+  .hero-connections {
+    left: -6%;
+    top: -5%;
+    width: 106%;
+    height: 109%;
+    opacity: 0.7;
+  }
+  .hero-photo-frame {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 4 / 5;
+  }
+  .hero-photo {
+    object-position: center;
+  }
+  .values-orbits {
+    width: 160vw;
+    max-width: none;
+    right: -60%;
+    top: -2rem;
+    opacity: 0.6;
+  }
+}

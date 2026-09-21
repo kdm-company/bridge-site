@@ -1,0 +1,89 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1000 650"
+  aria-hidden="true"
+  focusable="false"
+>
+  <style>
+    :root {
+      --orbit-white: #FFFFFF;
+      --orbit-blue: #C5D7FF;
+
+      --orbit-white-opacity: 0.18;
+      --orbit-blue-opacity: 0.24;
+      --orbit-dot-opacity: 0.46;
+    }
+
+    .orbit-line {
+      fill: none;
+      stroke-linecap: round;
+      vector-effect: non-scaling-stroke;
+    }
+
+    .orbit-line--white {
+      stroke: var(--orbit-white);
+      stroke-opacity: var(--orbit-white-opacity);
+      stroke-width: 1.2;
+    }
+
+    .orbit-line--blue {
+      stroke: var(--orbit-blue);
+      stroke-opacity: var(--orbit-blue-opacity);
+      stroke-width: 1.4;
+    }
+
+    .orbit-dot {
+      vector-effect: non-scaling-stroke;
+      opacity: var(--orbit-dot-opacity);
+    }
+
+    .orbit-dot--white {
+      fill: var(--orbit-white);
+    }
+
+    .orbit-dot--blue {
+      fill: var(--orbit-blue);
+    }
+  </style>
+
+  <g>
+    <!-- Outer arc: broad, open, slightly offset upward -->
+    <path
+      class="orbit-line orbit-line--white"
+      d="M 446 520
+         A 338 250 0 0 1 532 144
+         A 338 250 0 0 1 944 118"
+    />
+
+    <!-- Upper-middle arc: shifted right and down -->
+    <path
+      class="orbit-line orbit-line--blue"
+      d="M 530 570
+         A 292 214 0 0 1 592 220
+         A 292 214 0 0 1 930 176"
+    />
+
+    <!-- Inner arc: asymmetric opening toward lower-right -->
+    <path
+      class="orbit-line orbit-line--white"
+      d="M 588 478
+         A 228 174 0 0 1 632 250
+         A 228 174 0 0 1 906 244
+         A 228 174 0 0 1 934 408"
+    />
+
+    <!-- Lower arc: center shifted left/down to create depth -->
+    <path
+      class="orbit-line orbit-line--blue"
+      d="M 456 392
+         A 258 196 0 0 0 618 586
+         A 258 196 0 0 0 944 522"
+    />
+  </g>
+
+  <g>
+    <circle class="orbit-dot orbit-dot--blue" cx="590" cy="218" r="3.5" />
+    <circle class="orbit-dot orbit-dot--white" cx="907" cy="244" r="3" />
+    <circle class="orbit-dot orbit-dot--blue" cx="620" cy="585" r="4" />
+  </g>
+</svg>
